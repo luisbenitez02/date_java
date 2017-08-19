@@ -1,25 +1,31 @@
 package funciones;
 
-import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.Locale;
 
-/**
- * Created by luisb on 18/08/2017.
- */
+/*
+* Desarrollado por Luis Hernando Benitez
+* https://github.com/luisbenitez02
+* luisbenitez02@gmial.com
+*
+* Este codigo ha sido compartido de manera libre y gratuita, incluye fragmentos
+* de codigo correspondiente a otros autores cuyas fuentes se encuentran comentadas
+* en su implementacion. Utiliza el codigo para el aprendizaje y no olvides dar credito
+* POR FAVOR, INCLUYE EL LINK AL PROYECTO: https://github.com/luisbenitez02/date_java
+*
+* */
 public class ConfirmarFecha {
     private String fecha;
 
     public ConfirmarFecha(String fecha) {
         this.fecha = fecha;
-    }
+    }           //github.com/luisbenitez02/date_java
 
     public boolean revisarFecha(String fecha) {
         boolean result = true;
 
-        try {
+        try {           //github.com/luisbenitez02/date_java
             //------------------- https://www.youtube.com/watch?v=9jVF9Ci9HSc&t=328s
             Date formato_largo = new SimpleDateFormat("dd/MM/yyyy").parse(fecha);//devuelve formato largo de fecha
             //la anterior linea es 'inteligente' y si agregas por ejemplo 40/02/1998 va a devolver: 11/03/1998
@@ -40,7 +46,7 @@ public class ConfirmarFecha {
             //e.printStackTrace();
             result=false;
         }
-
+                        //github.com/luisbenitez02/date_java
         return result;
     }
 }

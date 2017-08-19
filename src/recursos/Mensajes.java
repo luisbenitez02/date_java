@@ -1,9 +1,17 @@
 package recursos;
 
-/**
- * Created by luisb on 17/08/2017.
- */
-public class Mensajes {
+/*
+* Desarrollado por Luis Hernando Benitez
+* https://github.com/luisbenitez02
+* luisbenitez02@gmial.com
+*
+* Este codigo ha sido compartido de manera libre y gratuita, incluye fragmentos
+* de codigo correspondiente a otros autores cuyas fuentes se encuentran comentadas
+* en su implementacion. Utiliza el codigo para el aprendizaje y no olvides dar credito
+* POR FAVOR, INCLUYE EL LINK AL PROYECTO: https://github.com/luisbenitez02/date_java
+*
+* */
+public class Mensajes {                 //github.com/luisbenitez02/date_java
 
     public void msjBienvenida(){
         System.out.println("-------------- Bienvenido ----------------------");
@@ -18,12 +26,12 @@ public class Mensajes {
         System.out.print("Ingresa el año a comprobar -->");
     }
 
-    public void msjfechaValida(){
+    public void msjfechaValida(){           //github.com/luisbenitez02/date_java
         System.out.println("-------------- Fecha Valida ---------------");
         System.out.print("Ingresa fecha Formato: (dd/MM/yyyy) -->");
     }
 
-    public void msjAgregarDias(){
+    public void msjAgregarDias(){           //github.com/luisbenitez02/date_java
         System.out.println("-------------- Agregar Dias ---------------");
         System.out.print("Ingresa fecha Formato: (dd/MM/yyyy) -->");
     }

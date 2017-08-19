@@ -3,7 +3,17 @@ package recursos;
 import funciones.AgregarDias;
 import funciones.AnioBisiesto;
 import funciones.ConfirmarFecha;
-import sun.applet.Main;
+/*
+* Desarrollado por Luis Hernando Benitez
+* https://github.com/luisbenitez02
+* luisbenitez02@gmial.com
+*
+* Este codigo ha sido compartido de manera libre y gratuita, incluye fragmentos
+* de codigo correspondiente a otros autores cuyas fuentes se encuentran comentadas
+* en su implementacion. Utiliza el codigo para el aprendizaje y no olvides dar credito
+* POR FAVOR, INCLUYE EL LINK AL PROYECTO: https://github.com/luisbenitez02/date_java
+*
+* */
 
 import java.util.Scanner;
 
@@ -17,7 +27,7 @@ public class Auxiliar {
     public void iniciar(){
         Mensajes msj = new Mensajes();//clase que contiene nuestros mensajes
         Auxiliar aux = new Auxiliar();//clase que contiene lector de entradas
-
+                                                                        //github.com/luisbenitez02/date_java
         msj.msjBienvenida();
         aux.leerMenu();
     }
@@ -25,7 +35,7 @@ public class Auxiliar {
     public void leerMenu(){
         Scanner lector = new Scanner(System.in);
         int op;
-
+                                                    //github.com/luisbenitez02/date_java
         System.out.print("--> ");
 
         op = lector.nextInt();
@@ -37,7 +47,7 @@ public class Auxiliar {
             case 2:
                 leerFecha();
                 break;
-            case 3:
+            case 3:                                     //github.com/luisbenitez02/date_java
                 leerFechaDias();
                 break;
             default:
@@ -53,7 +63,7 @@ public class Auxiliar {
 
         Scanner lector = new Scanner(System.in);
 
-        anio = lector.nextInt();
+        anio = lector.nextInt();                            //github.com/luisbenitez02/date_java
 
         AnioBisiesto execute = new AnioBisiesto(anio);
 
@@ -63,7 +73,7 @@ public class Auxiliar {
             System.out.println("¡¡¡¡¡¡----- El año ingresado NO es un año bisiesto----¡¡¡¡¡¡");
         }
 
-        regresar();
+        regresar();                                     //github.com/luisbenitez02/date_java
     }
 
     //Captura fecha para saber si es correcta
@@ -74,7 +84,7 @@ public class Auxiliar {
 
         Scanner lector = new Scanner(System.in);
 
-        fecha = lector.nextLine();
+        fecha = lector.nextLine();                      //github.com/luisbenitez02/date_java
 
         ConfirmarFecha execute = new ConfirmarFecha(fecha);
 
@@ -95,7 +105,7 @@ public class Auxiliar {
         String fecha;
 
         Scanner lector = new Scanner(System.in);
-
+                                                    //github.com/luisbenitez02/date_java
         fecha = lector.nextLine();
 
         ConfirmarFecha execute = new ConfirmarFecha(fecha);
@@ -122,7 +132,7 @@ public class Auxiliar {
             leerFechaDias();//repito metodo
         }
 
-    }
+    }                                       //github.com/luisbenitez02/date_java
     /*
     * Regresa al menu y muestra de nuevo la pantalla
     * */
@@ -137,7 +147,7 @@ public class Auxiliar {
 
         if (op == 0){
             iniciar();
-        } else{
+        } else{                                     //github.com/luisbenitez02/date_java
             salir();
         }
     }
