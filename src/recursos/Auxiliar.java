@@ -132,6 +132,7 @@ public class Auxiliar {
             leerFechaDias();//repito metodo
         }
 
+        regresar();
     }                                       //github.com/luisbenitez02/date_java
     /*
     * Regresa al menu y muestra de nuevo la pantalla
